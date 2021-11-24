@@ -1,0 +1,38 @@
+body { 
+background-image: linear-gradient(#292f33, #DDDDDD);
+display: flex;	
+	flex-direction: column;
+margin: 0;
+ } 
+header {	
+ background: rgb(36, 42, 45);
+ background-image: url("../images/fond.png");
+margin-top:0px;
+}
+header > h1{
+	position: relative;
+	left: 50px;
+	height:200px;
+}
+main {
+	align-self:center;
+width:900px;
+background-color:#EEEEEE
+}
+h2 {
+background-color:#EF4036;
+color:white
+}
+article {
+display: flex;	
+	flex-direction: column;
+align-items:center;
+  box-shadow: 10px 10px 3px 0 black;
+  border: 2px solid black;
+margin:40px;
+
+}
+article > img {
+ box-shadow: 8px 8px 1px 0 #333333;
+  border: 2px solid #333333;
+}
