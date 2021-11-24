@@ -1,38 +1,134 @@
 body { 
-background-image: linear-gradient(#292f33, #DDDDDD);
-display: flex;	
+	background-image: linear-gradient(#292f33, #DDDDDD);
+	display: flex;	
 	flex-direction: column;
-margin: 0;
+	margin: 0;
  } 
 header {	
- background: rgb(36, 42, 45);
- background-image: url("../images/fond.png");
-margin-top:0px;
-}
-header > h1{
-	position: relative;
-	left: 50px;
+	background: rgb(36, 42, 45);
+	background-image: url("../images/fond.png");
+	display:flex;
+	flex-direction:column;
 	height:200px;
+}
+
+header >h2  {
+	align-self:flex-end;
+	margin-right:20px
+}
+
+header >h1 > img {
+	position:relative;
+	left:50px;
+	top:40px
 }
 main {
 	align-self:center;
-width:900px;
-background-color:#EEEEEE
+	width:900px;
+	background-color:#EEEEEE
 }
-h2 {
-background-color:#EF4036;
-color:white
+h2 {	
+	color:white;
+	font-size: 22px;
+}
+h3 {	
+	color:white;
+	border: 2px solid black;
+	background-color:black;
+	border-top-left-radius: 5px;
 }
 article {
-display: flex;	
+	display: flex;	
 	flex-direction: column;
-align-items:center;
-  box-shadow: 10px 10px 3px 0 black;
-  border: 2px solid black;
-margin:40px;
-
+	align-items:center;
+	box-shadow: 10px 10px 3px 0 black;
+	border: 2px solid black;
+	margin:40px;
 }
 article > img {
- box-shadow: 8px 8px 1px 0 #333333;
-  border: 2px solid #333333;
+	box-shadow: 8px 8px 1px 0 #333333;
+	border: 2px solid #333333;
 }
+p {
+	margin:5px;
+}
+.important{
+	border: 2px solid #EF4036;
+	color:#EF4036;
+	font-family: sans-serif;
+	font-size: 16px;
+	margin-left:60px;
+	margin-right:60px;
+	line-height: 13px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* menu horizontal */
+nav > ul:nth-of-type(1)  {
+	margin: 0;
+	background: #EF4036;
+	height: 1.7em;
+	list-style:none
+}
+nav > ul:nth-of-type(1)  > li {
+	float: left;	
+	width: 120px;
+	margin: 0 5px;
+	
+}
+
+nav > ul:nth-of-type(1)  > li:nth-of-type(2) {
+	float: left;	
+	width: 120px;
+	height:1.7em;
+	margin-left:290px;
+	margin-right:40px;
+}
+
+nav > ul:nth-of-type(1) >li >a  {
+	color:white;
+	display: inline-block;
+	text-decoration: none; 
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* menu vertical invisible par defaut */
+nav > ul:nth-of-type(1) >li:nth-of-type(2) > ul:nth-of-type(1) {
+	display: none;	
+}
+
+/* menu vertical apparent au survol */
+nav > ul:nth-of-type(1) >li:nth-of-type(2):hover  {
+	background-color:black
+}
+
+/* menu vertical apparent au survol */
+nav > ul:nth-of-type(1) >li:nth-of-type(2):hover >ul:nth-of-type(1) >li >a{	
+	color:white;
+	display: block;
+	text-decoration: none; 
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	height:1.5em;
+	background-color:black	
+}
+
+/* menu vertical apparent au survol */
+nav > ul:nth-of-type(1) >li:nth-of-type(2):hover >ul:nth-of-type(1) {	
+	display:block; 
+	width:16em;
+	list-style:none;
+	margin-left:-40px;
+	margin-top:5px;
+}
+/* positionnement en relatif pour avoir un zindex pour conserver les evenements une fois le menu ouvert*/
+nav {
+        display: block;
+        position:relative;
+        z-index:2;
+}
+
