@@ -159,7 +159,6 @@ nav > ul:nth-of-type(1) >li:nth-of-type(2) >ul:nth-of-type(1) >li:hover >a {
 	border:5px solid black;
 	background-color:#EF4036	
 }
-
 /* positionnement en relatif pour avoir un zindex pour conserver les evenements une fois le menu ouvert*/
 nav {
         display: block;
@@ -170,10 +169,28 @@ nav {
 form > table > tbody > tr:nth-child(even){
 	background-color:#EEEEEE;
 }
+
+/**/
 form > table > tbody > tr:nth-child(odd){
-	background-color:#DDDDDD
+	background-color:#DDDDDD;
 }
-form > table > tbody > tr > td[colspan=2] {
-	background-color:#292f33 ;
-	color:white
+/**/
+form > table > tbody > tr > td[colspan="2"] {
+	background-color:#292f33;
+	color:white;
+}
+form > table > tbody > tr:last-of-type {
+	border:solid black
+}
+form > table > tbody > tr:last-of-type >td{
+	align-self:center;
+}
+/**/
+form > table {
+	margin-left:180px;
+	border-spacing: 0px;
+}
+footer {
+	display:flex;
+	justify-content:center;
 }
