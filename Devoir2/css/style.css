@@ -50,7 +50,7 @@ article > img {
 	border: 2px solid #333333;
 }
 p {
-	margin:5px;
+	padding:5px;
 }
 .important{
 	border: 2px solid #EF4036;
@@ -75,14 +75,14 @@ nav > ul:nth-of-type(1)  > li {
 	float: left;	
 	width: 120px;
 	margin: 0 5px;
-	
+	padding:5px	
 }
 
 nav > ul:nth-of-type(1)  > li:nth-of-type(2) {
 	float: left;	
 	width: 120px;
 	height:1.7em;
-	margin-left:290px;
+	margin-left:270px;
 	margin-right:40px;
 }
 
@@ -114,17 +114,33 @@ nav > ul:nth-of-type(1) >li:nth-of-type(2):hover >ul:nth-of-type(1) >li >a{
 	font-size: 16px;
 	font-weight: bold;
 	height:1.5em;
+	padding:5px;
 	background-color:black	
 }
 
 /* menu vertical apparent au survol */
 nav > ul:nth-of-type(1) >li:nth-of-type(2):hover >ul:nth-of-type(1) {	
 	display:block; 
-	width:16em;
+	width:18em;
 	list-style:none;
-	margin-left:-40px;
-	margin-top:5px;
+	margin-left:-45px;
+	margin-top:0px;
 }
+
+/* menu vertical survol des éléments */
+nav > ul:nth-of-type(1) >li:nth-of-type(2) >ul:nth-of-type(1) >li:hover >a {	
+	color:white;
+	display: block;
+	text-decoration: none; 
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	height:1.5em;
+	padding:5px;
+	border:5px solid black;
+	background-color:#EF4036	
+}
+
 /* positionnement en relatif pour avoir un zindex pour conserver les evenements une fois le menu ouvert*/
 nav {
         display: block;
